@@ -19,7 +19,7 @@ namespace ConsoleApp4
             Console.Write("Ingrese el resultado del tercer dado: ");
             int c = Convert.ToInt32(Console.ReadLine());
             int suma = a + b + c;
-            if (suma > 0)
+            if (suma > 0 && suma<=18)
             {
                 if (suma <= 7)
                 {
