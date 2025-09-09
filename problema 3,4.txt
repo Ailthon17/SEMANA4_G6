@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Net.Security;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        { 
+            Console.WriteLine("ingrese tu estado civil: ");
+            string estado = Convert.ToString(Console.ReadLine());
+            if (estado != "casado") 
+            {
+                Console.WriteLine("Usted esta divorciado");
+            }
+            else if (estado == "soltero")
+            {
+                Console.WriteLine("usted esta divorciado");
+            }
+        }
+    }
+}
+
+
+
+Console.WriteLine("ingrese tu estado civil: ");
+string estado = Convert.ToString(Console.ReadLine());
+if (estado == "casado")
+{
+    Console.WriteLine("Usted esta casado");
