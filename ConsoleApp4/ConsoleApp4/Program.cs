@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("MAQUINA TRAGAMONEDAS EL REY DADO");
+            Console.WriteLine("Lanza los 3 dados...");
+            Console.Write("Ingrese el resultado del primer dado: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ingrese el resultado del segundo dado: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ingrese el resultado del tercer dado: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int suma = a + b + c;
+            if (suma > 0)
+            {
+                if (suma <= 7)
+                {
+                    Console.WriteLine("Parece que el Rey Dado ha ganado...");
+                    Console.WriteLine("Pierdes tu dinero...");
+                }
+                else if (suma<=16 && suma > 7)
+                {
+                    Console.WriteLine("Empataste con el Rey dado...");
+                    Console.WriteLine("Recuperas tu dinero...");
+                }
+                else if (suma >= 17)
+                {
+                    Console.WriteLine("HAZ DERROTADO AL REY DADO");
+                    Console.WriteLine("MULTIPLICAS TU DINERO X10");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Suma no valida, intente de nuevo!!");
+            }
+
+            Console.WriteLine("Resultado del Rey Dado: " + suma);
+
+        }
+    }
+}
